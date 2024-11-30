@@ -1,7 +1,3 @@
-Berikut adalah contoh deskripsi untuk GitHub proyek bot musik Discord menggunakan Python:
-
----
-
 ### **Judul Proyek**
 🎵 **Discord Music Bot** - Python
 
@@ -61,17 +57,3 @@ Bot musik Discord sederhana yang dibangun menggunakan Python dan `discord.py`. B
    - `!play [judul/URL YouTube]`: Memutar lagu.
    - `!skip`: Melewati lagu saat ini.
    - `!leave`: Mengeluarkan bot dari voice channel.
-
----
-
-### **Kontribusi**
-Kontribusi sangat diterima! Silakan ajukan *pull request* atau laporkan masalah apa pun di [Issues](https://github.com/username/discord-music-bot/issues).
-
----
-
-### **Lisensi**
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
----
-
-Jika ada fitur tambahan atau modifikasi, Anda bisa menyesuaikan deskripsinya agar sesuai dengan proyek Anda! 🎵

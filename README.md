@@ -22,46 +22,48 @@ Klon repositori ini ke komputer Anda:
 ```bash
 git clone https://github.com/Dodikz/BotMusic-Discord.git
 cd discord-music-bot
-2. Membuat Virtual Environment
-Disarankan untuk menggunakan virtual environment untuk mengelola dependensi:
+```
 
-bash
-Copy code
+### 2. Membuat Virtual Environment
+Disarankan untuk menggunakan virtual environment untuk mengelola dependensi:
+```bash
 python3 -m venv venv
 source venv/bin/activate  # Untuk Linux/Mac
 venv\Scripts\activate  # Untuk Windows
-3. Menginstal Dependensi
-Instal semua dependensi yang diperlukan:
+```
 
-bash
-Copy code
+### 3. Menginstal Dependensi
+Instal semua dependensi yang diperlukan:
+```bash
 pip install -r requirements.txt
-4. Install FFmpeg
+```
+
+### 4. Install FFmpeg
 Bot ini memerlukan FFmpeg untuk memproses audio. Pastikan FFmpeg sudah terinstal di sistem Anda.
 
-Linux: Anda bisa menginstal FFmpeg menggunakan apt:
-bash
-Copy code
-sudo apt update
-sudo apt install ffmpeg
-Windows: Unduh FFmpeg dari FFmpeg.org dan tambahkan path binari ke dalam PATH lingkungan sistem Anda.
-5. Konfigurasi Token
-Buat file .env di direktori yang sama dengan bot dan masukkan token bot Discord Anda ke dalam file tersebut:
+- **Linux**: Anda bisa menginstal FFmpeg menggunakan apt:
+  ```bash
+  sudo apt update
+  sudo apt install ffmpeg
+  ```
+- **Windows**: Unduh FFmpeg dari [FFmpeg.org](https://ffmpeg.org/download.html) dan tambahkan path binari ke dalam `PATH` lingkungan sistem Anda.
 
-makefile
-Copy code
+### 5. Konfigurasi Token
+Buat file `.env` di direktori yang sama dengan bot dan masukkan token bot Discord Anda ke dalam file tersebut:
+```
 DISCORD_TOKEN=your_token_here
-Gantilah your_token_here dengan token bot yang Anda dapatkan dari Discord Developer Portal.
+```
+Gantilah `your_token_here` dengan token bot yang Anda dapatkan dari [Discord Developer Portal](https://discord.com/developers/applications).
 
-6. Menjalankan Bot
+### 6. Menjalankan Bot
 Sekarang Anda bisa menjalankan bot dengan perintah:
-
-bash
-Copy code
+```bash
 python3 music-bot.py
-Perintah Bot
-!join: Bot akan bergabung dengan voice channel tempat Anda berada.
-!leave: Bot akan keluar dari voice channel.
-!play <search>: Memutar lagu berdasarkan pencarian (contoh: !play Never Gonna Give You Up).
-!skip: Melewati lagu yang sedang diputar dan melanjutkan ke lagu berikutnya.
-!stop: Menghentikan musik yang sedang diputar dan keluar dari voice channel.
+```
+
+## Perintah Bot
+- `!join`: Bot akan bergabung dengan voice channel tempat Anda berada.
+- `!leave`: Bot akan keluar dari voice channel.
+- `!play <search>`: Memutar lagu berdasarkan pencarian (contoh: `!play Never Gonna Give You Up`).
+- `!skip`: Melewati lagu yang sedang diputar dan melanjutkan ke lagu berikutnya.
+- `!stop`: Menghentikan musik yang sedang diputar dan keluar dari voice channel.
